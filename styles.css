@@ -28,6 +28,7 @@ Body {
   color: var(--desaturated-blue);
   border-radius: 20px;
   overflow: hidden;
+  margin: 50px auto;
 }
 
 .title {
@@ -42,6 +43,11 @@ Body {
 
 .container {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
 
 }
 
@@ -51,18 +57,65 @@ Body {
 }
 
 .order-description {
-    line-height:30px;
+    line-height: 25px;
+}
+.plan-container{
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.proceed-button {
-    background-color: var(--bright-blue);
-    padding: 1 rem 0;
-    color: white;
-    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+.plan-container a{
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+.plan-container a :hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-container strong{
+    color: var(--dark-blue);
+}
+
+.plan-description{
+    line-height: 20px;
+    margin-right: 75px;
+}
+
+button{
     width: 100%;
     border: none;
     font-weight: 700;
-    cursor: pointer;
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
     border-radius: 12px;
+    cursor: pointer;
+}
+.proceed-button {
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    
+}
+
+.proceed-button: hover;{
+    opacity: 0.8;
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+   
+}
+
+.cancel-button: hover{
+    color: black;
 }
